@@ -1,26 +1,109 @@
-z<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Óticas A+</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Óticas A+</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      background: linear-gradient(to bottom right, #001f3f, #ff7f50);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+    }
+
+    nav {
+      position: fixed;
+      top: 120px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      margin-bottom: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    main {
+      margin-left: 160px;
+      padding: 20px;
+    }
+
+    section {
+      padding: 50px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.5s ease;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 600px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="imagens/logo.png" alt="Logo Óticas A+" class="logo">
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Bem-vindo à Óticas A+</h1>
-        <p>Sua visão em primeiro lugar. Encontre os melhores óculos e serviços conosco.</p>
-    </main>
+  <header>
+    <img src="imagens/logo.png" alt="Logo Óticas A+" class="logo" />
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#produtos">Produtos e Serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Bem-vindo à Óticas A+</h2>
+      <p>Sua visão em primeiro lugar. Encontre os melhores óculos e serviços conosco.</p>
+      <p>A Óticas A+ se dedica à sua saúde visual com excelência e estilo.</p>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos e Serviços</h2>
+      <p>Confira nossos óculos de grau, solares, armações modernas e serviços de manutenção, troca de lentes e ajustes.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Fale conosco pelo WhatsApp: <strong>+55 11 4551-9519</strong></p>
+      <p>Nos siga no Instagram: <a href="https://www.instagram.com/oticas_amais/" target="_blank" style="color:orange;">@oticas_amais</a></p>
+    </section>
+  </main>
 </body>
 </html>
