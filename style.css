@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('oculos.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    max-width: 80px;
+}
+main {
+    margin-left: 130px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+}
+nav button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+nav button:hover {
+    background-color: #0a9396;
+}
