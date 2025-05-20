@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óticas A+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <img src="logo.png" alt="Logo Óticas A+" class="logo">
+    </aside>
+
+    <main>
+        <header>
+            <h1>Óticas A+</h1>
+            <nav>
+                <button onclick="showSection('produtos')">Produtos</button>
+                <button onclick="showSection('servicos')">Serviços</button>
+                <button onclick="showSection('contato')">Contato</button>
+            </nav>
+        </header>
+
+        <section id="produtos" class="conteudo">
+            <h2>Produtos</h2>
+            <p>Armações, lentes, óculos de sol e muito mais.</p>
+        </section>
+
+        <section id="servicos" class="conteudo" style="display:none;">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Reparo de óculos</li>
+                <li>Troca de lentes</li>
+                <li>Troca de armação</li>
+            </ul>
+            <h3>Agende um horário:</h3>
+            <input type="date" id="data">
+        </section>
+
+        <section id="contato" class="conteudo" style="display:none;">
+            <h2>Contato</h2>
+            <p><a href="https://wa.me/551145519519" target="_blank">WhatsApp: +55 11 4551-9519</a></p>
+            <p><a href="https://www.instagram.com/oticas_amais" target="_blank">Instagram: @oticas_amais</a></p>
+        </section>
+    </main>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll(".conteudo");
+            sections.forEach(sec => sec.style.display = "none");
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</body>
+</html>
