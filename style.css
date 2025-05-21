@@ -9,48 +9,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 1rem;
+  background-color: #000000aa;
+  padding: 15px;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: bold;
+  background: transparent;
 }
 
 .menu a {
-  margin-left: 1rem;
+  margin: 0 10px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-}
-
-.menu a:hover {
-  text-decoration: underline;
 }
 
 .icon {
   width: 24px;
-  height: 24px;
   vertical-align: middle;
 }
 
-.conteudo {
-  padding: 2rem;
-}
-
-.produto {
-  margin-bottom: 1.5rem;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  background-color: #ff6600;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #cc5200;
+#contador-carrinho {
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8em;
+  margin-left: 5px;
 }
