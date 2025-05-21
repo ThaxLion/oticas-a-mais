@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrinho - Óticas A+</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">Óticas A+</div>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
 
+  <main class="conteudo">
+    <h2>Seu Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <p id="total"></p>
+  </main>
+
+  <script>
+    const lista = document.getElementById("lista-carrinho");
+    const total = document.getElementById("total");
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    let soma = 0;
+
+    carrinho.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+      lista.appendChild(li);
+      soma += item.preco;
+    });
+
+    total.textContent = `Total: R$ ${soma.toFixed(2)}`;
+  </script>
+</body>
+</html>
