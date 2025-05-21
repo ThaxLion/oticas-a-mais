@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Óticas A+</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,13 +15,16 @@
       <a href="contato.html">Contato</a>
       <a href="carrinho.html" class="carrinho-link">
         <img src="imagens/carrinho.png" alt="Carrinho" class="icon" />
+        <span id="contador-carrinho">0</span>
       </a>
     </nav>
   </header>
 
   <main class="conteudo">
     <h1>Bem-vindo à Óticas A+</h1>
-    <p>Sua visão em primeiro lugar. Encontre os melhores óculos e serviços conosco.</p>
+    <button onclick="adicionarAoCarrinho()">Adicionar Óculos</button>
   </main>
+
+  <script src="carrinho.js"></script>
 </body>
 </html>
