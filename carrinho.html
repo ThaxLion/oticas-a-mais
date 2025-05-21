@@ -1,39 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seu Carrinho</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Carrinho - Óticas A+</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="carrinho.js"></script>
 </head>
 <body>
-  <header class="topo">
-    <div class="logo">Óticas A+</div>
-    <nav class="menu">
-      <a href="index.html">Início</a>
-      <a href="produtos.html">Produtos</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-  </header>
-
-  <main class="conteudo">
-    <h1>Itens no Carrinho</h1>
-    <ul id="lista-carrinho"></ul>
-  </main>
-
-  <script>
-    const lista = document.getElementById("lista-carrinho");
-    const itens = JSON.parse(localStorage.getItem("carrinho")) || [];
-
-    if (itens.length === 0) {
-      lista.innerHTML = "<li>O carrinho está vazio.</li>";
-    } else {
-      itens.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item;
-        lista.appendChild(li);
-      });
-    }
-  </script>
+    <header class="topo">
+        <div class="logo">Óticas A+</div>
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+            <a href="carrinho.html" class="carrinho-link">
+                <img src="imagens/carrinho.png" alt="Carrinho" class="icon" />
+                <span id="contador-carrinho">0</span>
+            </a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <h1>Seu Carrinho</h1>
+        <div id="carrinho-itens"></div>
+    </main>
 </body>
 </html>
